@@ -1,0 +1,14 @@
+.item {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    border: 1px solid #00ADB5;
+    margin: 10px;
+}
+
+.item img {
+    width: 50px;
+    border-radius: 15px;
+
+
+}
