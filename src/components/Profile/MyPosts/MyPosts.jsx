@@ -3,6 +3,7 @@ import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 
 const MyPosts = () => {
+
   return (
     <div>
       <div>
@@ -10,11 +11,8 @@ const MyPosts = () => {
         <button>Add Post</button>
         <div>New Post</div>
         <div className={s.posts}>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
+          <Post message='hi'/>
+          <Post message='yo'/>
         </div>
       </div>
     </div>
