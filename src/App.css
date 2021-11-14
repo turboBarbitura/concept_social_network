@@ -13,8 +13,15 @@ body {
     'n c';
 
   grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 5fr;
   color: #00fff5;
   background-color: #393e46;
   overflow: hidden;
+}
+
+
+.app-wrapper-content {
+  grid-area: c;
+  background-color: royalblue;
+
 }
