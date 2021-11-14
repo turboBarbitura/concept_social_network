@@ -14,7 +14,7 @@ body {
 
   grid-template-rows: 60px 1fr;
   grid-template-columns: 1fr 5fr;
-  color: #00fff5;
+  /*color: #00fff5;*/
   background-color: #393e46;
   overflow: hidden;
 }
