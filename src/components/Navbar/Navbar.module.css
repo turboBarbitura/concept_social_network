@@ -1,14 +1,14 @@
 .nav {
-  grid-area: n;
-  width: 100%;
-  background-color: #00adb5;
+    grid-area: n;
+    width: 100%;
+    background-color: #00adb5;
 }
 
 .item {
-  border: 2px solid gold;
-  border-radius: 5px;
+    border: 2px solid gold;
+    border-radius: 5px;
 }
 
 .active {
-  color: darkred;
+    color: darkred;
 }
