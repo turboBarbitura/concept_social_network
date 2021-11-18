@@ -2,34 +2,40 @@ import React from 'react';
 import s from './Dialogs.module.css'
 import {NavLink} from "react-router-dom";
 
+const DialogItem = (props) => {
 
-const Dialogs = () => {
+    let path = '/dialogs/' + props.id
+
+    return (
+        <div className={s.dialog + ' ' + s.active}>
+            <NavLink to={path}>{props.name}</NavLink>
+        </div>
+    )
+}
+
+const Message = (props) => {
+    return (
+        <div className={s.message}>{props.message}</div>
+    )
+}
+
+const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <div className={s.dialog + ' ' + s.active}>
-                    <NavLink to='/dialogs/1'>Misha</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to='/dialogs/2'>Maya</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to='/dialogs/3'>Lena</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to='/dialogs/4'>Dyadya Andrusha</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to='/dialogs/5'>Gisich</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to='/dialogs/6'>Baboka</NavLink>
-                </div>
+                <DialogItem name = 'Misha' id='1' />
+                <DialogItem name = 'Maya' id='2' />
+                <DialogItem name = 'Lena' id='3' />
+                <DialogItem name = 'Dyadya Andrusha' id='4' />
+                <DialogItem name = 'Gisich' id='5' />
+                <DialogItem name = 'Baboka' id='6' />
+
             </div>
             <div className={s.messages}>
-                <div className={s.message}>hi</div>
-                <div className={s.message}>hi hi</div>
-                <div className={s.message}>how are u?</div>
+                <Message message = 'hhih' />
+                <Message message = '332323' />
+                <Message message = 'rerffsfdfdferef' />
+
             </div>
 
         </div>

@@ -5,7 +5,7 @@
 }
 
 .dialogsItems {
-
+    text-decoration: none;
     padding: 10px;
 }
 
@@ -13,15 +13,18 @@
     color: gold;
 }
 
+NavLink {
+    text-decoration: none;
+}
+
 .dialog {
 
 }
 
 
-
 .messages {
 
-
+    color: #7a1d6f;
 }
 
 .message {
