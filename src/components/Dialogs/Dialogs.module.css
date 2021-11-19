@@ -13,12 +13,12 @@
     color: gold;
 }
 
-NavLink {
+
+
+ .dialog a {
     text-decoration: none;
-}
-
-.dialog {
-
+    color: greenyellow;
+    border: 2px solid green;
 }
 
 

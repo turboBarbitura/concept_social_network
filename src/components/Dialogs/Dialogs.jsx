@@ -32,9 +32,9 @@ const Dialogs = (props) => {
 
             </div>
             <div className={s.messages}>
-                <Message message = 'hhih' />
+                <Message message = 'Hello' />
                 <Message message = '332323' />
-                <Message message = 'rerffsfdfdferef' />
+                <Message message = 'world' />
 
             </div>
 

@@ -3,4 +3,9 @@
 .posts {
     background-color: #222831;
     border: 2px solid #00ADB5;
+    margin-top: 20px;
+}
+
+.postsBlock {
+    padding: 10px;
 }
