@@ -1,15 +1,16 @@
 import React from 'react'
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
+import posts from "../../../Data/posts";
 
 const MyPosts = () => {
 
-    let posts = [
-        {id: 1, message: 'hello moto'},
-        {id: 2, message: 'how are u?'},
-        {id: 3, message: 'wtf?'},
-
-    ]
+    // let posts = [
+    //     {id: 1, message: 'hello moto'},
+    //     {id: 2, message: 'how are u?'},
+    //     {id: 3, message: 'wtf?'},
+    //
+    // ]
 
     let postsElements = posts.map( p => <Post message= {p.message} /> )
 
