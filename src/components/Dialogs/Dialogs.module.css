@@ -21,6 +21,12 @@
     border: 2px solid green;
 }
 
+.dialog a.activeLink {
+
+    color: red;
+
+}
+
 
 .messages {
     margin-top: 10px;
