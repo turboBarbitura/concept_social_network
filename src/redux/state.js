@@ -4,7 +4,7 @@ let state = {
             {id: 1, message: 'hello moto'},
             {id: 2, message: 'how are u?'},
             {id: 3, message: 'wtf?'},
-            {id: 4, message: 'wtf nigga?'},
+            {id: 4, message: 'wtf man?'},
 
         ],
     },
@@ -28,6 +28,16 @@ let state = {
         ],
     },
 
+}
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+
+    }
+
+    state.profilePage.posts.push(newPost)
 }
 
 export default state
