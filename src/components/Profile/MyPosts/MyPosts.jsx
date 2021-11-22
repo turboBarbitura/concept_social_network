@@ -1,18 +1,11 @@
 import React from 'react'
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
-import posts from "../../../Data/posts";
 
-const MyPosts = () => {
 
-    // let posts = [
-    //     {id: 1, message: 'hello moto'},
-    //     {id: 2, message: 'how are u?'},
-    //     {id: 3, message: 'wtf?'},
-    //
-    // ]
+const MyPosts = (props) => {
 
-    let postsElements = posts.map( p => <Post message= {p.message} /> )
+    let postsElements = props.state.map( p => <Post message= {p.message} /> )
 
     return (
         <div className={s.postsBlock}>
