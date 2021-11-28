@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import s from './Likes.module.css'
 
 
 const Likes = () => {
@@ -16,9 +17,9 @@ const Likes = () => {
     return (
         <div>
             <p>Likes: {likes}</p>
-            <button className='like' onClick={increment}>like</button>
+            <button className={s.like} onClick={increment}>like</button>
             <p>Dislikes: {dislikes}</p>
-            <button className='dislike' onClick={decrement}>dislike</button>
+            <button className={s.dislike} onClick={decrement}>dislike</button>
         </div>
     );
 };
