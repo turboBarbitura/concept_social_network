@@ -1,4 +1,6 @@
-import {rerenderEntireTree} from "../render";
+let rerenderEntireTree = () => {
+
+}
 
 
 let state = {
@@ -34,6 +36,9 @@ let state = {
 
 }
 
+window.state = state
+
+
 export let addPost = () => {
     let newPost = {
         id: 5,
@@ -51,5 +56,10 @@ export let updateNewPostText = (newText) => {
     rerenderEntireTree(state)
 
 }
+
+export const subscribe = ( observer ) => {
+    rerenderEntireTree = observer //observer - паттерн наблюдатель
+}
+
 
 export default state
