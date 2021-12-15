@@ -16,7 +16,10 @@ let store = {
                 {id: 4, message: 'wtf man?'},
 
             ],
-            newPostText: ''
+
+            newPostText: '',
+
+
         },
 
         dialogsPage: {

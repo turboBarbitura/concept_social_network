@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from './Likes.module.css'
 
 
-const Likes = () => {
+const Likes = (props) => {
 
     const [likes, setLikes ] = useState(0)
     const [dislikes, setDislikes ] = useState(0)
@@ -14,6 +14,7 @@ const Likes = () => {
     function increment() {
         setLikes(likes +1)
     }
+
     return (
         <div>
             <p>Likes: {likes}</p>
